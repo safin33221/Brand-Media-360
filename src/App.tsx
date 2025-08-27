@@ -1,3 +1,4 @@
+import { Button } from "./components/ui/button"
 
 
 function App() {
@@ -6,6 +7,9 @@ function App() {
   return (
     <>
       <h1>Brand Media 360</h1>
+      <Button>
+        hello
+      </Button>
     </>
   )
 }
