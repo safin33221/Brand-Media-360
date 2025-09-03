@@ -1,7 +1,7 @@
 import { ArrowRight, ArrowUpRight } from "lucide-react";
-
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
+import Paragraph from "@/components/Shared/Paragraph";
 
 const Hero = () => {
     return (
@@ -19,9 +19,9 @@ const Hero = () => {
                             Complete Branding, Marketing & Media Solutions in One Place.
                         </h1>
 
-                        <p className="text-muted-foreground mb-8 max-w-xl lg:text-xl">
+                        <Paragraph>
                             At BrandMedia360, we go beyond marketing to craft your brand’s story. With digital marketing, creative design, and powerful media production, we build brands that connect, inspire, and grow in the digital world.
-                        </p>
+                        </Paragraph>
 
                         <div className="flex w-full flex-col justify-center gap-2 sm:flex-row lg:justify-start">
                             <Button asChild className="w-full sm:w-auto">

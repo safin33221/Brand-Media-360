@@ -4,7 +4,7 @@ import WhyWeDifferent from "@/components/Modules/About/WhyWeDifferent";
 
 export default function About() {
   return (
-    <div className="space-y-20">
+    <div className="space-y-20 max-md:mx-3">
       <OurHistory />
       <MissionAndVision />
       <WhyWeDifferent />

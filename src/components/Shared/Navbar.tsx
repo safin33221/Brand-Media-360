@@ -72,25 +72,25 @@ const navigationLinks = [
 export default function Navbar() {
   return (
     <header className="border-b px-4 md:px-6 max-w-[1420px] mx-auto">
-      <div className="flex h-16 items-center justify-between gap-4">
+      <div className="flex h-20 items-center justify-between gap-4">
         {/* Left side */}
         <div className="flex items-center gap-2">
           {/* Mobile menu trigger */}
           <Popover>
             <PopoverTrigger asChild>
               <Button
-                className="group size-8 md:hidden"
+                className="group size-5 md:hidden"
                 variant="ghost"
                 size="icon"
               >
                 <svg
-                  className="pointer-events-none"
-                  width={16}
-                  height={16}
+                  className="pointer-events-none "
+                  width={24}
+                  height={24}
                   viewBox="0 0 24 24"
                   fill="none"
                   stroke="currentColor"
-                  strokeWidth="2"
+                  strokeWidth="4"
                   strokeLinecap="round"
                   strokeLinejoin="round"
                   xmlns="http://www.w3.org/2000/svg"
@@ -166,19 +166,20 @@ export default function Navbar() {
               </NavigationMenu>
             </PopoverContent>
           </Popover>
+
           {/* Main nav */}
           <div className="flex items-center gap-6">
-            <a href="#" className="text-primary hover:text-primary/90">
+            <Link to="/" className="text-primary hover:text-primary/90">
               <Logo />
-            </a>
+            </Link>
             {/* Navigation menu */}
-            <NavigationMenu viewport={false} className="max-md:hidden">
-              <NavigationMenuList className="gap-2">
+            <NavigationMenu viewport={false} className="max-md:hidden ">
+              <NavigationMenuList className="gap-2 ">
                 {navigationLinks.map((link, index) => (
                   <NavigationMenuItem key={index}>
                     {link.submenu ? (
                       <>
-                        <NavigationMenuTrigger className="text-muted-foreground hover:text-primary bg-transparent px-2 py-1.5 font-medium *:[svg]:-me-0.5 *:[svg]:size-3.5">
+                        <NavigationMenuTrigger className="text-muted-foreground hover:text-primary bg-transparent px-2 py-1.5 text-lg  font-medium *:[svg]:-me-0.5 *:[svg]:size-3.5">
                           {link.label}
                         </NavigationMenuTrigger>
                         <NavigationMenuContent className="data-[motion=from-end]:slide-in-from-right-16! data-[motion=from-start]:slide-in-from-left-16! data-[motion=to-end]:slide-out-to-right-16! data-[motion=to-start]:slide-out-to-left-16! z-50 p-1">
@@ -220,7 +221,7 @@ export default function Navbar() {
                                             aria-hidden="true"
                                           />
                                         )}
-                                        <span>{item.label}</span>
+                                        <span className="">{item.label}</span>
                                       </div>
                                     )}
 
@@ -254,7 +255,7 @@ export default function Navbar() {
                       <Link to={link.href as string}>
                         <NavigationMenuLink
 
-                          className="text-muted-foreground hover:text-primary py-1.5 font-medium"
+                          className="text-muted-foreground hover:text-primary py-1.5 text-lg font-medium"
                         >
                           {link.label}
                         </NavigationMenuLink>
