@@ -1,4 +1,5 @@
-import { Button } from "./components/ui/button"
+import Navbar from "./components/Shared/Navbar"
+
 
 
 function App() {
@@ -6,10 +7,9 @@ function App() {
 
   return (
     <>
+      <Navbar />
       <h1>Brand Media 360</h1>
-      <Button>
-        hello
-      </Button>
+
     </>
   )
 }
