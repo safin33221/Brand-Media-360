@@ -1,4 +1,5 @@
-import Navbar from "./components/Shared/Navbar"
+import { Outlet } from "react-router"
+import CommonLayout from "./components/Layout/CommonLayout"
 
 
 
@@ -7,8 +8,9 @@ function App() {
 
   return (
     <>
-      <Navbar />
-      <h1>Brand Media 360</h1>
+      <CommonLayout>
+        <Outlet />
+      </CommonLayout>
 
     </>
   )
