@@ -2,6 +2,7 @@
 import { motion } from "framer-motion"
 import type { ComponentPropsWithoutRef } from "react"
 import { cn } from "@/lib/utils"
+import SectionTitle from "@/components/Shared/SectionTitle"
 
 
 
@@ -62,7 +63,7 @@ export default function TrustedBy({
     return (
         <section className="py-5 px-4 md:px-8 lg:px-5 ">
 
-
+            <SectionTitle title="Trusted By" subtitle="" />
             <div
                 data-aos="fade-up"
                 data-aos-duration="2000"
