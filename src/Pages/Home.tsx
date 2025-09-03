@@ -4,7 +4,7 @@ import MarqueeDemo from "@/components/Modules/Home/TrustedBy";
 
 export default function Home() {
     return (
-        <div>
+        <div className="space-y-20">
 
             <Hero />
             <AboutUs />

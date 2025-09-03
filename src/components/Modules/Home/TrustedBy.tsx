@@ -61,7 +61,7 @@ export default function TrustedBy({
     const direction = reverse ? -1 : 1
 
     return (
-        <section className="py-5 px-4 md:px-8 lg:px-5 ">
+        <section className=" ">
 
             <SectionTitle title="Trusted By" subtitle="" />
             <div

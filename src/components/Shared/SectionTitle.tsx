@@ -26,7 +26,7 @@ export default function SectionTitle({
             {subtitle && (
                 <p className="text-gray-600 text-sm md:text-base">{subtitle}</p>
             )}
-            <div className="w-16 h-1 bg-blue-600 rounded-full mt-2"></div>
+            <div className="w-16 h-1 bg-primary rounded-full mt-2"></div>
         </div>
     );
 }

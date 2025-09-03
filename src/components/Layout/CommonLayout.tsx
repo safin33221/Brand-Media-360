@@ -7,7 +7,7 @@ export default function CommonLayout({ children }: { children: ReactNode }) {
             <nav>
                 <Navbar />
             </nav>
-            <main className="grow-1">
+            <main className="grow-1  container mx-auto">
                 {children}
             </main>
         </div>

@@ -5,12 +5,12 @@ import { Button } from "@/components/ui/button";
 
 const Hero = () => {
     return (
-        <section className="">
-            <div className="container mx-auto px-5 py-10">
+        <section className="mt-10">
+            <div >
                 <div className="grid items-center gap-8 lg:grid-cols-2">
                     {/* Left Side */}
                     <div className="flex flex-col items-center text-center lg:items-start lg:text-left">
-                        <Badge variant="outline">
+                        <Badge variant="outline" className="text-lg">
                             ✨ Your Brand Builder
                             <ArrowUpRight className="ml-2 size-4" />
                         </Badge>
@@ -20,7 +20,7 @@ const Hero = () => {
                         </h1>
 
                         <p className="text-muted-foreground mb-8 max-w-xl lg:text-xl">
-                            At BrandMedia 360, we go beyond marketing to craft your brand’s story. With digital marketing, creative design, and powerful media production, we build brands that connect, inspire, and grow in the digital world.
+                            At BrandMedia360, we go beyond marketing to craft your brand’s story. With digital marketing, creative design, and powerful media production, we build brands that connect, inspire, and grow in the digital world.
                         </p>
 
                         <div className="flex w-full flex-col justify-center gap-2 sm:flex-row lg:justify-start">
