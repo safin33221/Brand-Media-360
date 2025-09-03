@@ -20,7 +20,7 @@ export default function SectionTitle({
 
     return (
         <div className={`flex flex-col gap-2 w-full ${alignment} max-w-2xl mx-auto mb-10`}>
-            <h2 className="text-2xl md:text-3xl font-bold text-gray-900">
+            <h2 className="text-2xl md:text-3xl font-bold ">
                 {title}
             </h2>
             {subtitle && (

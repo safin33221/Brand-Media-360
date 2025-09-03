@@ -14,10 +14,8 @@ const AboutUs = () => {
                     {/* About Us Section */}
                     <div className=" p-6 rounded-md flex flex-col justify-center">
                         <SectionTitle title="About us" align="left" />
-                        <p className="text-gray-700 leading-relaxed">
-                            We are a passionate team dedicated to building modern web
-                            solutions. Our mission is to deliver high-quality applications
-                            with great user experience.
+                        <p className=" leading-relaxed">
+                            BrandMedia 360 is a full-service digital agency dedicated to helping businesses grow and stand out in the modern marketplace. We specialize in digital marketing, branding design, photography, and video production, offering end-to-end solutions that transform ideas into impactful brand experiences. With a creative approach and strategic mindset, we work to make your brand more visible, engaging, and memorable
                         </p>
                     </div>
 
